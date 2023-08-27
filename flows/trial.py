@@ -3,7 +3,7 @@ import requests
 import zipfile
 from prefect import flow, task
 
-@task(retries=3)
+@task()
 def download_zip_file(url, download_path):
     os.makedirs(os.path.dirname(download_path), exist_ok=True)
 
@@ -27,16 +27,17 @@ def extract_csv_from_zip(downloaded_path, zip_extracted_path):
         else:
             print("No CSV file found in the zip archive.")
 
+
 @flow()
 def etl_web_to_gcs() -> None:
-    period = 202004
-    zip_url = f"https://divvy-tripdata.s3.amazonaws.com/{period}-divvy-tripdata.zip"
-    zip_download_path = f".\data\{period}-divvy-tripdata.zip"
-    print(f"Zip file downloaded to: {downloaded_path}")
-    zip_extracted_path = ".\data"
+# Define your tasks within the flow
+  period = 202004
+  zip_url = f"https://divvy-tripdata.s3.amazonaws.com/{period}-divvy-tripdata.zip"
+  zip_download_path = f".\data\{period}-divvy-tripdata.zip"
+  zip_extracted_path = ".\data"
 
-    downloaded_path = download_zip_file(zip_url, zip_download_path)
-    extract_csv_task  = extract_csv_from_zip(downloaded_path, zip_extracted_path)
+  downloaded_path = download_zip_file(zip_url, zip_download_path)
+  extract_csv_task = extract_csv_from_zip(downloaded_path, zip_extracted_path)
 
 if __name__ == '__main__':
     etl_web_to_gcs()
