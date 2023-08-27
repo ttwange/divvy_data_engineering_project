@@ -17,7 +17,6 @@ def download_zip_file(url, download_path):
         raise Exception(f"Failed to download the zip file from {url}.")
 
 @task()
-zip_extracted_path = ".\data"
 with zipfile.ZipFile(downloaded_path, "r") as zip_ref:
     csv_file_name = [name for name in zip_ref.namelist() if name.endswith(".csv")]
     if csv_file_name:
@@ -34,3 +33,5 @@ def etl_web_to_gcs() -> None:
     zip_download_path = f".\data\{period}-divvy-tripdata.zip"
     downloaded_path = download_zip_file(zip_url, zip_download_path)
     print(f"Zip file downloaded to: {downloaded_path}")
+
+    zip_extracted_path = ".\data"
