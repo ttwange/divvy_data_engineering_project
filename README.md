@@ -1,10 +1,5 @@
-# divvy_etl
-An extract load and transform pipeline for divvy bike data.<br>
-Am still working on this project!! <br>
-BE patient its an exciting one!!<br>
-There will <br>
-            -> GOOGLE CLOUD<br>
-            -> DBT<br>
-            -> PREFECT<br>
-            -> MAYBE TERRAFORM  <br>
-            -> THROW IN Docker TO TIE IT UP ALL TOGERTHER and push to the register/hub<br>
+# Divvy ETL Project
+
+Welcome to the Divvy ETL (Extract, Transform, Load) project! This project aims to automate the process of downloading, transforming, and analyzing Divvy bike data using a combination of technologies including Docker, Google Cloud, Prefect, and more.
+
+## Project Overview
