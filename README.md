@@ -11,3 +11,17 @@ The project structure is organized as follows:
   - **extract_load_transform.py**: This script automates the process of downloading Divvy monthly data and preparing it for transformation.
   - **etl_gcs_to_bg.py**: This script pulls data from Google Cloud Storage, transforms it, and loads it into BigQuery for analysis.
   - **D_param.py**: Parameterized ETL process file.
+- **data**: This directory holds the downloaded Divvy bike data.
+
+- **divvy_dbt**: This folder (still in development) will contain the transformation logic using DBT.
+
+- **gcs**: Contains data downloaded from Google Cloud Storage for further transformation and loading into BigQuery.
+
+- **docker-requirements.txt**: Requirements file specific to the Docker image creation process to optimize image download weight.
+
+- **requirements.txt**: General project requirements for package dependencies.
+
+- **Divvy_data.pdf**: Documentation detailing the Divvy bike data and its structure.
+
+- **Divvy_Bike_Report.pdf**: Visualization and analysis report showcasing the insights derived from the transformed data.
+
