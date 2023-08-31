@@ -24,4 +24,14 @@ The project structure is organized as follows:
 - **Divvy_data.pdf**: Documentation detailing the Divvy bike data and its structure.
 
 - **Divvy_Bike_Report.pdf**: Visualization and analysis report showcasing the insights derived from the transformed data.
+## Project Goals and Technologies
+
+The Divvy ETL project incorporates the following technologies:
+
+- **Google Cloud**: Utilized as the project's data lake for storage and retrieval.
+- **Google BigQuery**: Serves as the data warehouse for storing and querying transformed data.
+- **DBT (Data Build Tool)**: To be used for data transformation, providing a structured and organized transformation layer.
+- **Prefect**: Used for workflow orchestration and automation of the ETL pipeline.
+- **Docker**: The parameterized data flow is encapsulated in a Docker container for simplified deployment and reproducibility.
+- **Python**: The programming language driving the entire ETL process.
 
