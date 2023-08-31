@@ -48,3 +48,15 @@ To get started with the Divvy ETL project:
 4. Run the Docker image creation process using the provided `Dockerfile`.
 
 5. Execute the orchestrated Prefect flow to automate the ETL pipeline.
+
+## Project Status
+
+This project is currently under development. Updates and enhancements are being actively worked on.
+
+Thank you for your interest in the Divvy ETL project! Your patience is appreciated as we work towards an exciting solution that integrates various technologies to provide valuable insights from Divvy bike data.
+
+For more details, refer to the provided documentation files: `Divvy_data.pdf` for data specifics and `Divvy_Bike_Report.pdf` for visualizations and analysis.
+
+For any questions or assistance, please contact [your contact information].
+
+**Note:** This README provides a high-level overview of the project structure and goals. For detailed instructions and explanations, refer to the project's internal files and documentation.
