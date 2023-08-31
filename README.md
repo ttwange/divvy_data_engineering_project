@@ -35,3 +35,16 @@ The Divvy ETL project incorporates the following technologies:
 - **Docker**: The parameterized data flow is encapsulated in a Docker container for simplified deployment and reproducibility.
 - **Python**: The programming language driving the entire ETL process.
 
+## Getting Started
+
+To get started with the Divvy ETL project:
+
+1. Make sure you have Docker, Google Cloud credentials, and Prefect installed.
+
+2. Set up the required configurations in `etl_parent_flow-deployment.yaml`.
+
+3. Adjust parameters in `D_param.py` to configure the ETL process according to your needs.
+
+4. Run the Docker image creation process using the provided `Dockerfile`.
+
+5. Execute the orchestrated Prefect flow to automate the ETL pipeline.
