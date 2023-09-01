@@ -57,6 +57,6 @@ Thank you for your interest in the Divvy ETL project! Your patience is appreciat
 
 For more details, refer to the provided documentation files: `Divvy_data.pdf` for data specifics and `Divvy_Bike_Report.pdf` for visualizations and analysis.
 
-For any questions or assistance, please contact [your contact information].
+For any questions or assistance, please contact
 
 **Note:** This README provides a high-level overview of the project structure and goals. For detailed instructions and explanations, refer to the project's internal files and documentation.
