@@ -56,5 +56,5 @@ def etl_parent_flow(
         elt_web_to_gcs(period)
 
 if __name__ == '__main__':
-    periods = [202101,202102,202203]
+    periods = [202101,202102,202103]
     etl_parent_flow(periods)
