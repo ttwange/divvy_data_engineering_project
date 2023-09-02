@@ -50,7 +50,7 @@ def elt_web_to_gcs(period: int) -> None:
 
 @flow()
 def etl_parent_flow(
-    periods: list[int] = [202005,202005]
+    periods: list[int] = [202005,202006]
 ):
     for period in periods:
         elt_web_to_gcs(period)
