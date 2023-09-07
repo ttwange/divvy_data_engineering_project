@@ -1,3 +1,0 @@
-I will be extending the project to include dbt at some point
-..
-lets start working on 
