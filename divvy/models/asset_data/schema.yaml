@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: Divvy
+    description: "Divvy bike data for the ELT project"
+    database: test
+    schema: public
+    tables: 
+      - name: asset
+        desciption: "Bike rides details"
