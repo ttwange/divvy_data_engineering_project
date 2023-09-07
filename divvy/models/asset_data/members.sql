@@ -1,4 +1,5 @@
---a members model that calculates the ride count and the average ride duration for each member type ('member' or 'casual'). 
+{{config(materialized='table',schema='staging')}}
+
 with members as (
     select
         member_casual,
