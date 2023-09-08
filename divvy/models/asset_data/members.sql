@@ -1,5 +1,4 @@
 
-
 with members as (
     select
         member_casual,
