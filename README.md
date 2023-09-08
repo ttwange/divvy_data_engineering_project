@@ -13,7 +13,7 @@ The project structure is organized as follows:
   - **D_param.py**: Parameterized ETL process file.
 - **data**: This directory holds the downloaded Divvy bike data.
 
-- **divvy_dbt**: This folder (still in development) will contain the transformation logic using DBT.
+- **divvy_dbt**: This folder (still in development) will contain the transformation.
 
 - **gcs**: Contains data downloaded from Google Cloud Storage for further transformation and loading into BigQuery.
 
