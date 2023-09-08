@@ -1,4 +1,3 @@
-{{config(materialized='table',schema='staging')}}
 with stations as (
     select
         start_station_name,

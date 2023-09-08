@@ -1,5 +1,3 @@
---model transforms the data into a more usable format, parsing dates and times and converting them into timestamps.
-{{config(materialized='table',schema='staging')}}
 
 with rides as (
     select
