@@ -7,4 +7,72 @@ sources:
     schema: public
     tables: 
       - name: asset
-        desciption: "Bike rides details" 
+        desciption: "Bike rides details"
+        columns:
+          - name: ride_id
+            tests:
+              - dbt_utils.not_constant
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+
+          - name: rideable_type
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+
+          - name: started_at
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+
+          - name: ended_at
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+                  
+          - name: start_station_name
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+
+          - name: start_station_id
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+
+          - name: end_station_name
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+
+          - name: end_station_id
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+
+          - name: start_lat
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+
+          - name: start_lng
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+
+          - name: end_lat
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+
+          - name: end_lng
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+                  
+          - name: member_casual
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.95
+                 
